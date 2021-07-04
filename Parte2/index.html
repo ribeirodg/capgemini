@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Capgemini</title>
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+
+	</head>
+	<body>
+
+		<header>
+			<div class="container">
+				<h2 class="titulo">Capgemini</h2>
+			</div>
+		</header>
+		<main>
+			<section class="container">
+				<h2>Campanhas</h2>
+				<table>
+					<thead>
+						<tr>
+							<th>Nome do Anúncio</th>
+							<th>Nome do Cliente</th>
+							<th>Data Início</th>
+							<th>Data Fim</th>
+							<th>Inves-timento Diário</th>
+							<th>Valor Total Investido</th>
+							<th>Qtde Máxima Visuali-zações</th>
+							<th>Qtde Máxima Cliques</th>
+							<th>Qtde Máxima Comparti-lhamentos</th>
+						</tr>
+					</thead>
+					<tbody id="tabela-anuncios">
+					</tbody>
+				</table>
+
+			</section>
+		</main>
+
+		<section class="container">
+		    <h2 id="titulo-form">Novo anúncio:</h2>
+		    <form id="form-adiciona">
+		        <div class="">
+		            <label for="nome">Nome Anúncio:</label>
+		            <input id="nome" name="nome" type="text" class="campo">
+		        </div>
+		        <div class="grupo">
+		            <label for="cliente">Nome Cliente:</label>
+		            <input id="cliente" name="cliente" type="text"  class="campo">
+		        </div>
+		        <div class="grupo">
+		            <label for="inicio">Data de Inicio:</label>
+		            <input id="inicio" name="dataInicio" type="text"  class="campo">
+		        </div>
+		        <div class="grupo">
+		            <label for="fim">Data de Fim:</label>
+		            <input id="fim" name="dataFim" type="text" class="campo">
+		        </div>
+		        <div class="grupo">
+		            <label for="investimento">Valor do Investimento:</label>
+		            <input id="investimento" name="investimento" type="text"  class="campo">
+		        </div>
+
+		        <button id="adicionar-anuncio" class="botao bto-principal">Adicionar</button>
+		    </form>
+		</section>
+
+		<script src="js/anuncio.js" ></script>
+		<script src="node_modules/moment/moment.js" ></script>
+	</body>
+</html>
